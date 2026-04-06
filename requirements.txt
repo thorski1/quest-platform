@@ -1,7 +1,1 @@
 quest-engine @ git+https://github.com/thorski1/quest-engine.git
-primer-quest @ git+https://github.com/thorski1/primer.git
-nexus-quest @ git+https://github.com/thorski1/nexus-quest.git
-ai-academy @ git+https://github.com/thorski1/ai-academy.git
-learn-chinese @ git+https://github.com/thorski1/learn-chinese.git
-learn-spanish @ git+https://github.com/thorski1/learn-spanish.git
-learn-japanese @ git+https://github.com/thorski1/learn-japanese.git
