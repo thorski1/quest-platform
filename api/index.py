@@ -79,10 +79,20 @@ _CATEGORY_ORDER = [
 
 
 def create_app():
-    from engine.skill_pack import load_skill_pack
-    from engine.web.hub import create_hub_app
+    try:
+        from engine.skill_pack import load_skill_pack
+        from engine.web.hub import create_hub_app
+    except ImportError as e:
+        from starlette.applications import Starlette
+        from starlette.responses import HTMLResponse
+        from starlette.routing import Route
+        err = str(e)
+        async def home(request):
+            return HTMLResponse(f"<h1>Import Error</h1><pre>{err}</pre>")
+        return Starlette(routes=[Route("/", home), Route("/{path:path}", home)])
 
     all_packs = []
+    errors = []
     for cat in _CATEGORY_ORDER:
         pack_ids = [pid for pid, c in _CATEGORIES.items() if c == cat]
         for pid in pack_ids:
@@ -91,7 +101,7 @@ def create_app():
                 pack.category = cat
                 all_packs.append(pack)
             except Exception as e:
-                print(f"Warning: {pid}: {e}", file=sys.stderr)
+                errors.append(f"{pid}: {e}")
 
     if not all_packs:
         from starlette.applications import Starlette
@@ -100,12 +110,13 @@ def create_app():
 
         async def home(request):
             return HTMLResponse(
-                "<h1>Quest Platform</h1>"
+                "<h1>Quest Platform — Debug</h1>"
                 f"<p>Packs dir: {_PACKS_DIR}</p>"
                 f"<p>Exists: {_PACKS_DIR.exists()}</p>"
-                f"<p>Contents: {list(_PACKS_DIR.iterdir()) if _PACKS_DIR.exists() else 'N/A'}</p>"
+                f"<p>Categories: {len(_CATEGORIES)}</p>"
+                f"<p>Errors ({len(errors)}):</p><pre>{'<br>'.join(errors[:20])}</pre>"
             )
-        return Starlette(routes=[Route("/", home)])
+        return Starlette(routes=[Route("/", home), Route("/{path:path}", home)])
 
     return create_hub_app(all_packs)
 
