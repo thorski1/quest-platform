@@ -25,7 +25,7 @@ for p in [
     "dinosaurs", "weather", "maps", "famous_people", "religions",
     "planets", "logic", "shapes", "sports", "simple_machines",
     "reading", "writing", "cultures", "health", "basic_math",
-    "electricity", "plants", "insects", "astronomy",
+    "electricity", "plants", "insects", "astronomy", "countries",
 ]:
     _CATEGORIES[p] = "Kids (Ages 5-12)"
 
@@ -39,7 +39,7 @@ for p in [
     "python_advanced", "dns_http", "ml_engineering", "linux_internals",
     "redis", "testing", "graphql", "microservices", "message_queues",
     "git_advanced", "auth", "monitoring", "containers", "iac",
-    "sql_advanced",
+    "sql_advanced", "devsecops",
 ]:
     _CATEGORIES[p] = "DevOps & Engineering"
 
