@@ -25,7 +25,7 @@ for p in [
     "dinosaurs", "weather", "maps", "famous_people", "religions",
     "planets", "logic", "shapes", "sports", "simple_machines",
     "reading", "writing", "cultures", "health", "basic_math",
-    "electricity", "plants", "insects", "astronomy", "countries",
+    "electricity", "plants", "insects", "astronomy", "countries", "robotics",
 ]:
     _CATEGORIES[p] = "Kids (Ages 5-12)"
 
@@ -39,7 +39,7 @@ for p in [
     "python_advanced", "dns_http", "ml_engineering", "linux_internals",
     "redis", "testing", "graphql", "microservices", "message_queues",
     "git_advanced", "auth", "monitoring", "containers", "iac",
-    "sql_advanced", "devsecops",
+    "sql_advanced", "devsecops", "platform_eng",
 ]:
     _CATEGORIES[p] = "DevOps & Engineering"
 
@@ -47,7 +47,7 @@ for p in [
 for p in [
     "ai_basics", "prompt_engineering", "chatbots", "ai_tools",
     "ai_ethics", "ai_for_work", "ai_coding", "ai_agents",
-    "ai_safety", "ai_rag", "ai_finetuning", "ai_multimodal",
+    "ai_safety", "ai_rag", "ai_finetuning", "ai_multimodal", "ai_agents_adv",
 ]:
     _CATEGORIES[p] = "AI & Machine Learning"
 
@@ -59,7 +59,7 @@ for p in ["pinyin", "greetings", "numbers_chinese", "food_drink",
 
 for p in ["basics", "greetings_es", "numbers_es", "food_es",
            "family_es", "travel_es", "daily_es", "culture_es",
-           "colors_clothing", "weather_es", "restaurant_es"]:
+           "colors_clothing", "weather_es", "restaurant_es", "directions_es"]:
     _CATEGORIES[p] = "Learn Spanish"
 
 for p in ["hiragana", "katakana", "greetings_jp", "numbers_jp",
