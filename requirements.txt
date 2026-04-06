@@ -1,1 +1,1 @@
-quest-engine @ git+https://github.com/thorski1/quest-engine.git
+quest-engine[web,postgres] @ git+https://github.com/thorski1/quest-engine.git
