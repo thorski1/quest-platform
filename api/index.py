@@ -25,7 +25,7 @@ for p in [
     "dinosaurs", "weather", "maps", "famous_people", "religions",
     "planets", "logic", "shapes", "sports", "simple_machines",
     "reading", "writing", "cultures", "health", "basic_math",
-    "electricity", "plants", "insects", "astronomy", "countries", "robotics", "brain", "python_kids", "ocean_explore", "earth_science",
+    "electricity", "plants", "insects", "astronomy", "countries", "robotics", "brain", "python_kids", "ocean_explore", "earth_science", "music_adv",
 ]:
     _CATEGORIES[p] = "Kids (Ages 5-12)"
 
@@ -39,7 +39,7 @@ for p in [
     "python_advanced", "dns_http", "ml_engineering", "linux_internals",
     "redis", "testing", "graphql", "microservices", "message_queues",
     "git_advanced", "auth", "monitoring", "containers", "iac",
-    "sql_advanced", "devsecops", "platform_eng", "sre", "k8s_advanced",
+    "sql_advanced", "devsecops", "platform_eng", "sre", "k8s_advanced", "cloud_arch",
 ]:
     _CATEGORIES[p] = "DevOps & Engineering"
 
@@ -54,7 +54,7 @@ for p in [
 # Languages
 for p in ["pinyin", "greetings", "numbers_chinese", "food_drink",
            "family", "daily_life", "travel", "culture",
-           "colors_shapes", "weather_time", "body_health", "transport", "school"]:
+           "colors_shapes", "weather_time", "body_health", "transport", "school", "hobbies"]:
     _CATEGORIES[p] = "Learn Chinese"
 
 for p in ["basics", "greetings_es", "numbers_es", "food_es",
