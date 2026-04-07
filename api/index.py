@@ -25,7 +25,7 @@ for p in [
     "dinosaurs", "weather", "maps", "famous_people", "religions",
     "planets", "logic", "shapes", "sports", "simple_machines",
     "reading", "writing", "cultures", "health", "basic_math",
-    "electricity", "plants", "insects", "astronomy", "countries", "robotics", "brain",
+    "electricity", "plants", "insects", "astronomy", "countries", "robotics", "brain", "python_kids", "ocean_explore",
 ]:
     _CATEGORIES[p] = "Kids (Ages 5-12)"
 
@@ -54,7 +54,7 @@ for p in [
 # Languages
 for p in ["pinyin", "greetings", "numbers_chinese", "food_drink",
            "family", "daily_life", "travel", "culture",
-           "colors_shapes", "weather_time", "body_health", "transport"]:
+           "colors_shapes", "weather_time", "body_health", "transport", "school"]:
     _CATEGORIES[p] = "Learn Chinese"
 
 for p in ["basics", "greetings_es", "numbers_es", "food_es",
