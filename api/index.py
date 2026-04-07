@@ -25,7 +25,7 @@ for p in [
     "dinosaurs", "weather", "maps", "famous_people", "religions",
     "planets", "logic", "shapes", "sports", "simple_machines",
     "reading", "writing", "cultures", "health", "basic_math",
-    "electricity", "plants", "insects", "astronomy", "countries", "robotics", "brain", "python_kids", "ocean_explore",
+    "electricity", "plants", "insects", "astronomy", "countries", "robotics", "brain", "python_kids", "ocean_explore", "earth_science",
 ]:
     _CATEGORIES[p] = "Kids (Ages 5-12)"
 
@@ -39,7 +39,7 @@ for p in [
     "python_advanced", "dns_http", "ml_engineering", "linux_internals",
     "redis", "testing", "graphql", "microservices", "message_queues",
     "git_advanced", "auth", "monitoring", "containers", "iac",
-    "sql_advanced", "devsecops", "platform_eng", "sre",
+    "sql_advanced", "devsecops", "platform_eng", "sre", "k8s_advanced",
 ]:
     _CATEGORIES[p] = "DevOps & Engineering"
 
@@ -59,12 +59,12 @@ for p in ["pinyin", "greetings", "numbers_chinese", "food_drink",
 
 for p in ["basics", "greetings_es", "numbers_es", "food_es",
            "family_es", "travel_es", "daily_es", "culture_es",
-           "colors_clothing", "weather_es", "restaurant_es", "directions_es"]:
+           "colors_clothing", "weather_es", "restaurant_es", "directions_es", "health_es"]:
     _CATEGORIES[p] = "Learn Spanish"
 
 for p in ["hiragana", "katakana", "greetings_jp", "numbers_jp",
            "food_jp", "daily_jp", "travel_jp", "culture_jp",
-           "colors_nature", "shopping_jp", "directions_jp", "family_jp"]:
+           "colors_nature", "shopping_jp", "directions_jp", "family_jp", "weather_jp"]:
     _CATEGORIES[p] = "Learn Japanese"
 
 # Ordered category display
