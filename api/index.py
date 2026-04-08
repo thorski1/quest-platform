@@ -67,6 +67,38 @@ for p in ["hiragana", "katakana", "greetings_jp", "numbers_jp",
            "colors_nature", "shopping_jp", "directions_jp", "family_jp", "weather_jp"]:
     _CATEGORIES[p] = "Learn Japanese"
 
+
+# New games
+for p in ["hangul", "greetings_kr", "numbers_kr"]:
+    _CATEGORIES[p] = "Learn Korean"
+
+for p in ["basics_fr", "greetings_fr", "numbers_fr"]:
+    _CATEGORIES[p] = "Learn French"
+
+for p in ["basics_de", "greetings_de", "numbers_de"]:
+    _CATEGORIES[p] = "Learn German"
+
+for p in ["basics_it", "greetings_it", "numbers_it"]:
+    _CATEGORIES[p] = "Learn Italian"
+
+for p in ["cyber_basics", "web_security", "ethical_hacking"]:
+    _CATEGORIES[p] = "Cybersecurity"
+
+for p in ["stats_basics", "pandas_101", "visualization"]:
+    _CATEGORIES[p] = "Data Science"
+
+for p in ["html_css", "javascript_101", "react_basics"]:
+    _CATEGORIES[p] = "Web Development"
+
+for p in ["personal_finance", "investing_101", "crypto_basics"]:
+    _CATEGORIES[p] = "Finance"
+
+for p in ["psych_intro", "psych_dev", "psych_social"]:
+    _CATEGORIES[p] = "Psychology"
+
+for p in ["kitchen_basics", "world_cuisines", "baking_101"]:
+    _CATEGORIES[p] = "Cooking"
+
 # Ordered category display
 _CATEGORY_ORDER = [
     "Kids (Ages 5-12)",
@@ -75,6 +107,16 @@ _CATEGORY_ORDER = [
     "Learn Chinese",
     "Learn Spanish",
     "Learn Japanese",
+    "Learn Korean",
+    "Learn French",
+    "Learn German",
+    "Learn Italian",
+    "Cybersecurity",
+    "Data Science",
+    "Web Development",
+    "Finance",
+    "Psychology",
+    "Cooking",
 ]
 
 
